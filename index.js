@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Database connection details
 const dbConfig = {
-    host: 'btw2bu9p01s29x8hplgj-mysql.services.clever-cloud.com',
-    user: 'u7oaqmno7he8keou',
-    password: 'RpLD6MtQImUD6trHT8hL', // Replace with your MySQL password
-    database: 'btw2bu9p01s29x8hplgj'
+    host: 'bmlhvv7x76r445vl2dod-mysql.services.clever-cloud.com',
+    user: 'ueclxblwh6we9vql',
+    password: 'ueclxblwh6we9vql', // Replace with your MySQL password
+    database: 'bmlhvv7x76r445vl2dod'
 };
 
 let db;
@@ -45,11 +45,11 @@ handleDisconnect();
 
 // In-memory storage for votes (for simplicity)
 let votes = {
-    "RAFIKI . ": 0,
-    "DANIEL. ": 0,
-    "KAMANZI. ": 0,
-    "KAYITESI. ": 0,
-    "INEZA. ": 0
+    "albertine . ": 0,
+    "itangishaka. ": 0,
+    "clema. ": 0,
+    "rwema. ": 0,
+    "iranzi. ": 0
 };
 
 // In-memory storage for user data (for simplicity)
@@ -96,8 +96,8 @@ app.post('/ussd', (req, res) => {
             } else {
                 // Voting option selected
                 response = userLanguages[phoneNumber] === 'en' ? 
-                    `CON Select a candidate:\n1. Raymond IGABINEZA\n2. Florence UMUTONIWASE\n3. Jean Paul KWIBUKA\n4. Gaella UWAYO\n5. Danny HABIMANA` : 
-                    `CON Hitamo umukandida:\n1. Raymond IGABINEZA\n2. Florence UMUTONIWASE\n3. Jean Paul KWIBUKA\n4. Gaella UWAYO\n5. Danny HABIMANA`;
+                    `CON Select a candidate:\n1. Albertine ITANGISHAKA\n2.Davide KABERUKA\n3. Eric IRANZI\n4. Aline ISHIMWE\n5. Tito NDAYISABA` : 
+                    `CON Hitamo umukandida:\n1. Albertine ITANGISHAKA\n2. Davide KABERUKA\n3. Eric IRANZI\n4. Aline ISHIMW\n5.Tito NDAYISABA `;
             }
         } else if (userInput[2] === '2') {
             // View votes option selected
