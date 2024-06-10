@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const dbConfig = {
     host: 'bmlhvv7x76r445vl2dod-mysql.services.clever-cloud.com',
     user: 'ueclxblwh6we9vql',
-    password: 'ueclxblwh6we9vql', // Replace with your MySQL password
+    password: 'z6BJJ8BCbABBM2VOeqAb', // Replace with your MySQL password
     database: 'bmlhvv7x76r445vl2dod'
 };
 
