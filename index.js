@@ -96,8 +96,8 @@ app.post('/ussd', (req, res) => {
             } else {
                 // Voting option selected
                 response = userLanguages[phoneNumber] === 'en' ? 
-                    `CON Select a candidate:\n1. Albertine ITANGISHAKA\n2.Davide KABERUKA\n3. Eric IRANZI\n4. Aline ISHIMWE\n5. Tito NDAYISABA` : 
-                    `CON Hitamo umukandida:\n1. Albertine ITANGISHAKA\n2. Davide KABERUKA\n3. Eric IRANZI\n4. Aline ISHIMW\n5.Tito NDAYISABA `;
+                    `CON Select a candidate:\n1. Albertine \n2.itangishaka\n3. clema\n4. rwema\n5. iranzi` : 
+                    `CON Hitamo umukandida:\n1. Albertine \n2. itangishaka\n3. clema\n4. rwema\n5.iranzi `;
             }
         } else if (userInput[2] === '2') {
             // View votes option selected
